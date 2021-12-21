@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/simpleboard/static/css/main.5b962f87.css",
-    "main.js": "/simpleboard/static/js/main.2d020b3a.js",
+    "main.js": "/simpleboard/static/js/main.4ec28656.js",
     "index.html": "/simpleboard/index.html",
     "main.5b962f87.css.map": "/simpleboard/static/css/main.5b962f87.css.map",
-    "main.2d020b3a.js.map": "/simpleboard/static/js/main.2d020b3a.js.map"
+    "main.4ec28656.js.map": "/simpleboard/static/js/main.4ec28656.js.map"
   },
   "entrypoints": [
     "static/css/main.5b962f87.css",
-    "static/js/main.2d020b3a.js"
+    "static/js/main.4ec28656.js"
   ]
 }
