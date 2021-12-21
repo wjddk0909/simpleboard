@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/simpleboard/static/css/main.e6c13ad2.css",
-    "main.js": "/simpleboard/static/js/main.b7281345.js",
+    "main.css": "/simpleboard/static/css/main.5b962f87.css",
+    "main.js": "/simpleboard/static/js/main.2d020b3a.js",
     "index.html": "/simpleboard/index.html",
-    "main.e6c13ad2.css.map": "/simpleboard/static/css/main.e6c13ad2.css.map",
-    "main.b7281345.js.map": "/simpleboard/static/js/main.b7281345.js.map"
+    "main.5b962f87.css.map": "/simpleboard/static/css/main.5b962f87.css.map",
+    "main.2d020b3a.js.map": "/simpleboard/static/js/main.2d020b3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.b7281345.js"
+    "static/css/main.5b962f87.css",
+    "static/js/main.2d020b3a.js"
   ]
 }
