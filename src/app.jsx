@@ -23,10 +23,10 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>영화 리뷰</h1>
+      <h1>영화 리뷰 기록</h1>
       <div className='form-wrap'>
         <input type="text" className='tit-input' placeholder='영화 제목을 입력해주세요' onChange={getValue} name='title'/>
-        <textarea className='txt-area' placeholder='내용'></textarea>
+        <textarea className='txt-area' name='content' onChange={getValue}></textarea>
       </div>
       <button className='submit-btn'
         onClick={() => {
