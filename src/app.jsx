@@ -1,5 +1,7 @@
 import {useState} from 'react';
 import './app.css';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import HtmlReactParser from 'html-react-parser';
 
 function App() {
@@ -26,7 +28,29 @@ function App() {
       <h1>영화 리뷰 기록</h1>
       <div className='form-wrap'>
         <input type="text" className='tit-input' placeholder='영화 제목을 입력해주세요' onChange={getValue} name='title'/>
-        <textarea className='txt-area' placeholder='내용'></textarea>
+        <CKEditor
+          editor={ClassicEditor}
+          data=""
+          onReady={editor => {
+            // You can store the "editor" and use when it is needed.
+            console.log('Editor is ready to use!', editor);
+          }}
+          onChange={(event, editor) => {
+            const data = editor.getData();
+            console.log({ event, editor, data });
+            setMovieCont({
+              ...movieCont,
+              content: data
+            })
+            console.log(movieCont)
+          }}
+          onBlur={(event, editor) => {
+            console.log('Blur.', editor);
+          }}
+          onFocus={(event, editor) => {
+            console.log('Focus.', editor);
+          }}
+        />
       </div>
       <button className='submit-btn'
         onClick={() => {
